@@ -32,7 +32,7 @@ ydl_opts = {
 ydl = YoutubeDL(ydl_opts)
 links=[]
 finalurl=""
-STREAM=os.environ.get("STREAM_URL", "http://peridot.streamguys.com:7150/Mirchi")
+STREAM=os.environ.get("STREAM_URL", "http://stream.zeno.fm/e646hfnqv38uv")
 regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
 match = re.match(regex,STREAM)
 if match:
@@ -67,12 +67,12 @@ class Config:
     RADIO_TITLE=os.environ.get("RADIO_TITLE", "Music 24/7 | Radio Mode")
     if RADIO_TITLE == "False":
         RADIO_TITLE=None
-    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
+    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 750))
     DELAY = int(os.environ.get("DELAY", 10))
-    API_ID = int(os.environ.get("API_ID", ""))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_ID = int(os.environ.get("API_ID", "3047095"))
+    API_HASH = os.environ.get("API_HASH", "994ffa4835a9c6fb1d697bdf283addbc")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "2030043966:AAGxLhXyFIqv4JLjIzYJcJ4X_Q1-bRstur0")
+    SESSION = os.environ.get("SESSION_STRING", "BQABYNENwi2ffvuXs4crVQOX0Nk2JpYi_a1vGC8Gh0p0qV_AW0_tw8_Is1swz0cA53A_sLSVva1QJyVLUN2nDC_dSY1nU1Zy_OB0RZQBJWl56UcO-y1NyRp7PNqLDk-w7976r6z9CaoknGjv64bra6nthEYGJxoK2eymlBPGMeqcrCckoXOoBDdavQkhm0JlC0ju93h2hFXA6n07so_0L83pAYdhNCLP4gXBULCl_94tnwZ9qs8xvrc-ZdziIuM2QxcEJ515cTWl877qzoX73hVbearQL6ZxFFPs9rshCeu_snKdbd9EnznoZpuYnpxW1yVsWoDXNyrgN6pTFyMB52-GasWa_AA")
     playlist=[]
     msg = {}
 
